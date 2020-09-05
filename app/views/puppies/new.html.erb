@@ -1,0 +1,14 @@
+<h2>New Puppy</h2>
+
+<%= form_with(model: @puppy) do |f| %>
+
+  <div class="form-item">
+    <%= f.label :photo %>
+    <%= f.file_field :photo, accept: "image/*" %>
+  </div>
+
+  <div class="form-item">
+    <%= f.submit "Create puppy", class: "btn" %>
+  </div>
+
+<% end %>

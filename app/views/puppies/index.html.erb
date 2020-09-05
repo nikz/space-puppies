@@ -1,0 +1,7 @@
+<% if @puppies.present? %>
+  <div class="puppy-grid">
+    <%= render @puppies %>
+  </div>
+<% else %>
+  <div class="empty">No puppies — yet!</div>
+<% end %>

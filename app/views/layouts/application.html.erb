@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SpacePuppies</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <%= image_tag "puppy.svg" %>
+      <h1>Space Puppies</h1>
+
+      <%= link_to "New Puppy", new_puppy_url, class: "btn" %>
+    </header>
+
+    <main>
+
+      <%= yield %>
+
+    </main>
+
+    <footer>
+
+      <a href="https://thenounproject.com/search/?q=puppy&i=1963353">puppy by cinnamon stick from the Noun Project</a>
+     
+
+    </footer>
+  </body>
+</html>
